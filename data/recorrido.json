@@ -1,0 +1,42 @@
+{
+  "default": {
+    "firstScene": "nodo_inicio",
+    "author": "NetValle",
+    "autoLoad": true,
+    "compass": true
+  },
+  "scenes": {
+    "nodo_inicio": {
+      "title": "Acceso T-MEXPARK (0m)",
+      "type": "equirectangular",
+      "panorama": "frame_00000.jpg",
+      "lat": 19.62847666,
+      "lon": -99.14726000,
+      "hotSpots": [
+        {
+          "pitch": -5,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar por Vialidad Principal (200m)",
+          "sceneId": "nodo_final"
+        }
+      ]
+    },
+    "nodo_final": {
+      "title": "Fin del Corredor (200m)",
+      "type": "equirectangular",
+      "panorama": "frame_00094.jpg",
+      "lat": 19.63073333,
+      "lon": -99.14587833,
+      "hotSpots": [
+        {
+          "pitch": -5,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar al Acceso de Control",
+          "sceneId": "nodo_inicio"
+        }
+      ]
+    }
+  }
+}

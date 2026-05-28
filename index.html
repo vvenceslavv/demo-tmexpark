@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <style>
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: Arial, sans-serif; }
         #panorama-viewer { width: 100%; height: 100%; background: #000; }
-        .branding-badge { position: absolute; top: 20px; left: 20px; background: rgba(13, 44, 84, 0.95); color: white; padding: 12px 20px; border-radius: 5px; border-left: 4px solid #c29438; z-index: 100; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .branding-badge h1 { margin: 0; font-size: 16px; letter-spacing: 0.5px; font-weight: 600; }
+        .branding-badge { position: absolute; top: 20px; left: 20px; background: rgba(13, 44, 84, 0.95); color: white; padding: 12px 20px; border-radius: 5px; border-left: 4px solid #c29438; z-index: 100; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        .branding-badge h1 { margin: 0; font-size: 16px; letter-spacing: 0.5px; }
         .branding-badge p { margin: 3px 0 0 0; font-size: 11px; color: #cbd5e0; }
     </style>
 </head>
@@ -18,55 +18,16 @@
 
     <div class="branding-badge">
         <h1>NETMARKER 360</h1>
-        <p>Demo Interactiva: T-MEXPARK // NetValle</p>
+        <p>Recorrido Virtual 200m // NETVALLE</p>
     </div>
 
     <div id="panorama-viewer"></div>
 
     <script>
-        pannellum.viewer('panorama-viewer', {
-            "default": {
-                "firstScene": "nodo1",
-                "author": "NetValle",
-                "autoLoad": true,
-                "compass": true
-            },
-            "scenes": {
-                "nodo1": {
-                    "title": "Acceso Principal - Nodo 1",
-                    "hfov": 110,
-                    "pitch": -3,
-                    "yaw": 117,
-                    "type": "equirectangular",
-                    "panorama": "frame_00000.jpg",
-                    "hotSpots": [
-                        {
-                            "pitch": -5,
-                            "yaw": 45,
-                            "type": "scene",
-                            "text": "Avanzar a Vialidad Principal (Nodo 2)",
-                            "sceneId": "nodo2"
-                        }
-                    ]
-                },
-                "nodo2": {
-                    "title": "Vialidad Principal - Nodo 2",
-                    "hfov": 110,
-                    "yaw": 5,
-                    "type": "equirectangular",
-                    "panorama": "frame_00094.jpg",
-                    "hotSpots": [
-                        {
-                            "pitch": -10,
-                            "yaw": 180,
-                            "type": "scene",
-                            "text": "Regresar al Acceso (Nodo 1)",
-                            "sceneId": "nodo1"
-                        }
-                    ]
-                }
-            }
-        });
+        fetch('data/recorrido.json')
+            .then(response => response.json())
+            .then(config => pannellum.viewer('panorama-viewer', config))
+            .catch(err => console.error('Error al cargar la telemetría:', err));
     </script>
 </body>
 </html>
