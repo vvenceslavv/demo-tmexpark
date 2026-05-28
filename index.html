@@ -3,31 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetMarker 360 - Demo T-MEXPARK</title>
+    <title>NetMarker 360 - Demo Interactiva T-MEXPARK</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: Arial, sans-serif; }
-        #panorama-viewer { width: 100%; height: 100%; background: #000; }
-        .branding-badge { position: absolute; top: 20px; left: 20px; background: rgba(13, 44, 84, 0.95); color: white; padding: 12px 20px; border-radius: 5px; border-left: 4px solid #c29438; z-index: 100; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+
+        /* Contenedor dividido en dos pantallas (Split-Screen) */
+        #main-container { display: flex; width: 100%; height: 100%; }
+        #map-panel { width: 50%; height: 100%; background: #e5e7eb; border-right: 2px solid #0d2c54; }
+        #panorama-panel { width: 50%; height: 100%; background: #000; position: relative; }
+
+        /* Branding de NetValle */
+        .branding-badge { position: absolute; top: 20px; left: 20px; background: rgba(13, 44, 84, 0.95); color: white; padding: 12px 20px; border-radius: 5px; border-left: 4px solid #c29438; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         .branding-badge h1 { margin: 0; font-size: 16px; letter-spacing: 0.5px; }
         .branding-badge p { margin: 3px 0 0 0; font-size: 11px; color: #cbd5e0; }
     </style>
 </head>
 <body>
 
-    <div class="branding-badge">
-        <h1>NETMARKER 360</h1>
-        <p>Recorrido Virtual 200m // NETVALLE</p>
+    <div id="main-container">
+        <div id="map-panel"></div>
+
+        <div id="panorama-panel">
+            <div class="branding-badge">
+                <h1>NETMARKER 360</h1>
+                <p>Telemetría Sincronizada // NETVALLE</p>
+            </div>
+            <div id="panorama-viewer" style="width:100%; height:100%;"></div>
+        </div>
     </div>
 
-    <div id="panorama-viewer"></div>
-
     <script>
-        fetch('data/recorrido.json')
-            .then(response => response.json())
-            .then(config => pannellum.viewer('panorama-viewer', config))
-            .catch(err => console.error('Error al cargar la telemetría:', err));
+        // 1. Inicializar el Mapa centrado en las coordenadas de tu ruta (Nextlalpan)
+        const map = L.map('map-panel').setView([19.6296, -99.1465], 16);
+
+        // Capa de mapa callejero estilo Google Maps (OpenStreetMap Standard)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Marcador interactivo que se moverá en el mapa representando nuestra posición
+        const positionMarker = L.marker([19.62847666, -99.14726000]).addTo(map)
+            .bindPopup("<b>NetMarker 360</b><br>Posición actual en el corredor.")
+            .openPopup();
+
+        // 2. Configurar el Visor Panorámico (StreetView)
+        const viewer = pannellum.viewer('panorama-viewer', {
+            "default": {
+                "firstScene": "nodo_inicio",
+                "author": "NetValle",
+                "autoLoad": true,
+                "compass": true
+            },
+            "scenes": {
+                "nodo_inicio": {
+                    "title": "Acceso Principal T-MEXPARK (0m)",
+                    "type": "equirectangular",
+                    "panorama": "frame_00000.jpg",
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw": 0,
+                            "type": "scene",
+                            "text": "Avanzar por el corredor (200m)",
+                            "sceneId": "nodo_final"
+                        }
+                    ]
+                },
+                "nodo_final": {
+                    "title": "Fin de Corredor (200m - Zona de Reserva)",
+                    "type": "equirectangular",
+                    "panorama": "frame_00094.jpg",
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw": 180,
+                            "type": "scene",
+                            "text": "Regresar al Acceso Principal",
+                            "sceneId": "nodo_inicio"
+                        }
+                    ]
+                }
+            }
+        });
+
+        // 3. Lógica de Sincronización: Mover el marcador del mapa al cambiar de escena (StreetView)
+        viewer.on('scenechange', function(sceneId) {
+            if (sceneId === 'nodo_inicio') {
+                // Coordenada inicial de tu route.geojson
+                positionMarker.setLatLng([19.62847666, -99.14726000]);
+                map.panTo([19.62847666, -99.14726000]);
+            } else if (sceneId === 'nodo_final') {
+                // Coordenada final de tu route.geojson
+                positionMarker.setLatLng([19.63073333, -99.14587833]);
+                map.panTo([19.63073333, -99.14587833]);
+            }
+        });
     </script>
 </body>
 </html>
