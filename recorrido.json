@@ -1,0 +1,1046 @@
+{
+  "default": {
+    "firstScene": "nodo_frame_00000",
+    "author": "NetValle",
+    "autoLoad": true,
+    "compass": true
+  },
+  "scenes": {
+    "nodo_frame_00000": {
+      "title": "Progreso del Corredor - 0m (frame_00000)",
+      "type": "equirectangular",
+      "panorama": "frame_00000.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00001"
+        }
+      ]
+    },
+    "nodo_frame_00001": {
+      "title": "Progreso del Corredor - 4m (frame_00001)",
+      "type": "equirectangular",
+      "panorama": "frame_00001.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00002"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00000"
+        }
+      ]
+    },
+    "nodo_frame_00002": {
+      "title": "Progreso del Corredor - 8m (frame_00002)",
+      "type": "equirectangular",
+      "panorama": "frame_00002.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00003"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00001"
+        }
+      ]
+    },
+    "nodo_frame_00003": {
+      "title": "Progreso del Corredor - 12m (frame_00003)",
+      "type": "equirectangular",
+      "panorama": "frame_00003.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00004"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00002"
+        }
+      ]
+    },
+    "nodo_frame_00004": {
+      "title": "Progreso del Corredor - 16m (frame_00004)",
+      "type": "equirectangular",
+      "panorama": "frame_00004.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00005"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00003"
+        }
+      ]
+    },
+    "nodo_frame_00005": {
+      "title": "Progreso del Corredor - 20m (frame_00005)",
+      "type": "equirectangular",
+      "panorama": "frame_00005.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00006"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00004"
+        }
+      ]
+    },
+    "nodo_frame_00006": {
+      "title": "Progreso del Corredor - 24m (frame_00006)",
+      "type": "equirectangular",
+      "panorama": "frame_00006.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00007"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00005"
+        }
+      ]
+    },
+    "nodo_frame_00007": {
+      "title": "Progreso del Corredor - 28m (frame_00007)",
+      "type": "equirectangular",
+      "panorama": "frame_00007.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00008"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00006"
+        }
+      ]
+    },
+    "nodo_frame_00008": {
+      "title": "Progreso del Corredor - 32m (frame_00008)",
+      "type": "equirectangular",
+      "panorama": "frame_00008.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00009"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00007"
+        }
+      ]
+    },
+    "nodo_frame_00009": {
+      "title": "Progreso del Corredor - 36m (frame_00009)",
+      "type": "equirectangular",
+      "panorama": "frame_00009.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00010"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00008"
+        }
+      ]
+    },
+    "nodo_frame_00010": {
+      "title": "Progreso del Corredor - 40m (frame_00010)",
+      "type": "equirectangular",
+      "panorama": "frame_00010.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00011"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00009"
+        }
+      ]
+    },
+    "nodo_frame_00011": {
+      "title": "Progreso del Corredor - 44m (frame_00011)",
+      "type": "equirectangular",
+      "panorama": "frame_00011.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00012"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00010"
+        }
+      ]
+    },
+    "nodo_frame_00012": {
+      "title": "Progreso del Corredor - 48m (frame_00012)",
+      "type": "equirectangular",
+      "panorama": "frame_00012.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00013"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00011"
+        }
+      ]
+    },
+    "nodo_frame_00013": {
+      "title": "Progreso del Corredor - 53m (frame_00013)",
+      "type": "equirectangular",
+      "panorama": "frame_00013.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00014"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00012"
+        }
+      ]
+    },
+    "nodo_frame_00014": {
+      "title": "Progreso del Corredor - 57m (frame_00014)",
+      "type": "equirectangular",
+      "panorama": "frame_00014.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00015"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00013"
+        }
+      ]
+    },
+    "nodo_frame_00015": {
+      "title": "Progreso del Corredor - 61m (frame_00015)",
+      "type": "equirectangular",
+      "panorama": "frame_00015.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00016"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00014"
+        }
+      ]
+    },
+    "nodo_frame_00016": {
+      "title": "Progreso del Corredor - 65m (frame_00016)",
+      "type": "equirectangular",
+      "panorama": "frame_00016.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00017"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00015"
+        }
+      ]
+    },
+    "nodo_frame_00017": {
+      "title": "Progreso del Corredor - 69m (frame_00017)",
+      "type": "equirectangular",
+      "panorama": "frame_00017.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00018"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00016"
+        }
+      ]
+    },
+    "nodo_frame_00018": {
+      "title": "Progreso del Corredor - 73m (frame_00018)",
+      "type": "equirectangular",
+      "panorama": "frame_00018.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00019"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00017"
+        }
+      ]
+    },
+    "nodo_frame_00019": {
+      "title": "Progreso del Corredor - 77m (frame_00019)",
+      "type": "equirectangular",
+      "panorama": "frame_00019.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00020"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00018"
+        }
+      ]
+    },
+    "nodo_frame_00020": {
+      "title": "Progreso del Corredor - 81m (frame_00020)",
+      "type": "equirectangular",
+      "panorama": "frame_00020.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00021"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00019"
+        }
+      ]
+    },
+    "nodo_frame_00021": {
+      "title": "Progreso del Corredor - 85m (frame_00021)",
+      "type": "equirectangular",
+      "panorama": "frame_00021.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00022"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00020"
+        }
+      ]
+    },
+    "nodo_frame_00022": {
+      "title": "Progreso del Corredor - 89m (frame_00022)",
+      "type": "equirectangular",
+      "panorama": "frame_00022.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00023"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00021"
+        }
+      ]
+    },
+    "nodo_frame_00023": {
+      "title": "Progreso del Corredor - 93m (frame_00023)",
+      "type": "equirectangular",
+      "panorama": "frame_00023.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00024"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00022"
+        }
+      ]
+    },
+    "nodo_frame_00024": {
+      "title": "Progreso del Corredor - 97m (frame_00024)",
+      "type": "equirectangular",
+      "panorama": "frame_00024.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00025"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00023"
+        }
+      ]
+    },
+    "nodo_frame_00025": {
+      "title": "Progreso del Corredor - 102m (frame_00025)",
+      "type": "equirectangular",
+      "panorama": "frame_00025.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00026"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00024"
+        }
+      ]
+    },
+    "nodo_frame_00026": {
+      "title": "Progreso del Corredor - 106m (frame_00026)",
+      "type": "equirectangular",
+      "panorama": "frame_00026.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00027"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00025"
+        }
+      ]
+    },
+    "nodo_frame_00027": {
+      "title": "Progreso del Corredor - 110m (frame_00027)",
+      "type": "equirectangular",
+      "panorama": "frame_00027.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00028"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00026"
+        }
+      ]
+    },
+    "nodo_frame_00028": {
+      "title": "Progreso del Corredor - 114m (frame_00028)",
+      "type": "equirectangular",
+      "panorama": "frame_00028.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00029"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00027"
+        }
+      ]
+    },
+    "nodo_frame_00029": {
+      "title": "Progreso del Corredor - 118m (frame_00029)",
+      "type": "equirectangular",
+      "panorama": "frame_00029.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00030"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00028"
+        }
+      ]
+    },
+    "nodo_frame_00030": {
+      "title": "Progreso del Corredor - 122m (frame_00030)",
+      "type": "equirectangular",
+      "panorama": "frame_00030.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00031"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00029"
+        }
+      ]
+    },
+    "nodo_frame_00031": {
+      "title": "Progreso del Corredor - 126m (frame_00031)",
+      "type": "equirectangular",
+      "panorama": "frame_00031.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00032"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00030"
+        }
+      ]
+    },
+    "nodo_frame_00032": {
+      "title": "Progreso del Corredor - 130m (frame_00032)",
+      "type": "equirectangular",
+      "panorama": "frame_00032.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00033"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00031"
+        }
+      ]
+    },
+    "nodo_frame_00033": {
+      "title": "Progreso del Corredor - 134m (frame_00033)",
+      "type": "equirectangular",
+      "panorama": "frame_00033.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00034"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00032"
+        }
+      ]
+    },
+    "nodo_frame_00034": {
+      "title": "Progreso del Corredor - 138m (frame_00034)",
+      "type": "equirectangular",
+      "panorama": "frame_00034.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00035"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00033"
+        }
+      ]
+    },
+    "nodo_frame_00035": {
+      "title": "Progreso del Corredor - 142m (frame_00035)",
+      "type": "equirectangular",
+      "panorama": "frame_00035.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00036"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00034"
+        }
+      ]
+    },
+    "nodo_frame_00036": {
+      "title": "Progreso del Corredor - 146m (frame_00036)",
+      "type": "equirectangular",
+      "panorama": "frame_00036.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00037"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00035"
+        }
+      ]
+    },
+    "nodo_frame_00037": {
+      "title": "Progreso del Corredor - 151m (frame_00037)",
+      "type": "equirectangular",
+      "panorama": "frame_00037.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00038"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00036"
+        }
+      ]
+    },
+    "nodo_frame_00038": {
+      "title": "Progreso del Corredor - 155m (frame_00038)",
+      "type": "equirectangular",
+      "panorama": "frame_00038.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00039"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00037"
+        }
+      ]
+    },
+    "nodo_frame_00039": {
+      "title": "Progreso del Corredor - 159m (frame_00039)",
+      "type": "equirectangular",
+      "panorama": "frame_00039.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00040"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00038"
+        }
+      ]
+    },
+    "nodo_frame_00040": {
+      "title": "Progreso del Corredor - 163m (frame_00040)",
+      "type": "equirectangular",
+      "panorama": "frame_00040.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00041"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00039"
+        }
+      ]
+    },
+    "nodo_frame_00041": {
+      "title": "Progreso del Corredor - 167m (frame_00041)",
+      "type": "equirectangular",
+      "panorama": "frame_00041.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00042"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00040"
+        }
+      ]
+    },
+    "nodo_frame_00042": {
+      "title": "Progreso del Corredor - 171m (frame_00042)",
+      "type": "equirectangular",
+      "panorama": "frame_00042.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00043"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00041"
+        }
+      ]
+    },
+    "nodo_frame_00043": {
+      "title": "Progreso del Corredor - 175m (frame_00043)",
+      "type": "equirectangular",
+      "panorama": "frame_00043.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00044"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00042"
+        }
+      ]
+    },
+    "nodo_frame_00044": {
+      "title": "Progreso del Corredor - 179m (frame_00044)",
+      "type": "equirectangular",
+      "panorama": "frame_00044.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00045"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00043"
+        }
+      ]
+    },
+    "nodo_frame_00045": {
+      "title": "Progreso del Corredor - 183m (frame_00045)",
+      "type": "equirectangular",
+      "panorama": "frame_00045.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00046"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00044"
+        }
+      ]
+    },
+    "nodo_frame_00046": {
+      "title": "Progreso del Corredor - 187m (frame_00046)",
+      "type": "equirectangular",
+      "panorama": "frame_00046.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00047"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00045"
+        }
+      ]
+    },
+    "nodo_frame_00047": {
+      "title": "Progreso del Corredor - 191m (frame_00047)",
+      "type": "equirectangular",
+      "panorama": "frame_00047.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00048"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00046"
+        }
+      ]
+    },
+    "nodo_frame_00048": {
+      "title": "Progreso del Corredor - 195m (frame_00048)",
+      "type": "equirectangular",
+      "panorama": "frame_00048.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 0,
+          "type": "scene",
+          "text": "Avanzar",
+          "sceneId": "nodo_frame_00049"
+        },
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00047"
+        }
+      ]
+    },
+    "nodo_frame_00049": {
+      "title": "Progreso del Corredor - 200m (frame_00049)",
+      "type": "equirectangular",
+      "panorama": "frame_00049.jpg",
+      "hotSpots": [
+        {
+          "pitch": -8,
+          "yaw": 180,
+          "type": "scene",
+          "text": "Regresar",
+          "sceneId": "nodo_frame_00048"
+        }
+      ]
+    }
+  }
+}
